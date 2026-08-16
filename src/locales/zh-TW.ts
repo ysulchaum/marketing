@@ -14,6 +14,7 @@ const zhTW = {
       product: "產品",
       features: "功能",
       enquiry: "教育合作",
+      contact: "聯絡我們",
       download: "下載 App",
       menu: "開啟導覽選單",
       close: "關閉導覽選單",
@@ -25,7 +26,7 @@ const zhTW = {
       body: "Student StudyPen 將手寫、AI 回饋與有方向的練習，帶進一個專注而從容的學習空間。",
       download: "前往 App Store 下載",
       explore: "了解使用方式",
-      imageAlt: "iPad 上的 Student Saver，顯示手寫數學解答與 AI 回饋",
+      imageAlt: "iPad 上的 Student StudyPen，顯示手寫數學解答與 AI 回饋",
     },
     intro: {
       eyebrow: "讓思考過程完整呈現",
@@ -36,7 +37,7 @@ const zhTW = {
       pencil: {
         number: "01",
         title: "用 Apple Pencil 自然書寫",
-        body: "不論數學、科學或文字題，都能完整寫下每一個步驟。Student Saver 留下足夠空間，讓思路不必被侷限在狹小輸入框中。",
+        body: "不論數學、科學或文字題，都能完整寫下每一個步驟。Student StudyPen 留下足夠空間，讓思路不必被侷限在狹小輸入框中。",
       },
       feedback: {
         number: "02",
@@ -76,9 +77,9 @@ const zhTW = {
       eyebrow: "Student StudyPen 教育合作",
       title: "為你的學生帶來更有意義的練習。",
       body: "歡迎學校、補習及教學團隊與教育合作夥伴聯絡我們，一起了解 Student StudyPen 如何支援學生學習。",
-      action: "洽詢 B2B 教育合作",
+      action: "洽詢教育合作",
       email: "turfcoding@gmail.com",
-      subject: "Student StudyPen B2B 教育合作洽詢",
+      subject: "Student StudyPen 教育合作洽詢",
       emailBody:
         "Student StudyPen 團隊您好：\n\n我想進一步了解 Student StudyPen 如何應用於我們的學生。\n\n機構名稱：\n學生人數：\n希望洽談的內容：\n",
     },
@@ -90,8 +91,15 @@ const zhTW = {
     footer: {
       tagline: "為 iPad 打造的專注學習空間。",
       appStore: "App Store",
-      enquiry: "B2B 教育合作",
+      enquiry: "教育合作",
       copyright: "© {{year}} Student StudyPen",
+    },
+    contact: {
+      eyebrow: "聯絡我們",
+      title: "我們很樂意聽到你的聲音。",
+      body: "如果你有任何問題、回饋，或想討論 Student StudyPen 如何支援你的學生，請與我們聯絡。電子郵件：turfcoding@gmail.com",
+      action: "寄送電子郵件",
+      email: "turfcoding@gmail.com",
     },
   },
 } as const;

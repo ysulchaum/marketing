@@ -15,6 +15,7 @@ const en = {
       product: "Product",
       features: "Features",
       enquiry: "For educators",
+      contact: "Contact us",
       download: "Get the app",
       menu: "Open navigation",
       close: "Close navigation",
@@ -79,9 +80,9 @@ const en = {
       eyebrow: "Student StudyPen for education",
       title: "Bring more thoughtful practice to your learners.",
       body: "We welcome enquiries from schools, tutoring teams, and education partners exploring Student StudyPen for their students.",
-      action: "Start a B2B enquiry",
+      action: "Start an enquiry",
       email: "turfcoding@gmail.com",
-      subject: "Student StudyPen B2B enquiry",
+      subject: "Student StudyPen enquiry",
       emailBody:
         "Hello Student StudyPen team,\n\nI would like to learn more about Student StudyPen for our students.\n\nOrganisation:\nNumber of learners:\nWhat we would like to discuss:\n",
     },
@@ -93,8 +94,15 @@ const en = {
     footer: {
       tagline: "A focused learning space for iPad.",
       appStore: "App Store",
-      enquiry: "B2B enquiry",
+      enquiry: "Enquiry",
       copyright: "© {{year}} Student StudyPen",
+    },
+    contact: {
+      eyebrow: "Contact us",
+      title: "We’d love to hear from you.",
+      body: "If you have questions, feedback, or would like to discuss Student StudyPen for your students, please reach out. Email: turfcoding@gmail.com",
+      action: "Send us an email",
+      email: "turfcoding@gmail.com",
     },
   },
 } as const;

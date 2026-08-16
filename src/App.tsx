@@ -19,6 +19,9 @@ import appIcon from "./assets/icon3.png";
 const APP_STORE_URL =
   "https://apps.apple.com/us/app/student-saver/id6780177346";
 
+const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdD4rFIMFE9V0R6eJG5MgWiHFqpyzIpXdkxxO-QMyyvG6pc9w/viewform?usp=dialog";
+
 function AppStoreLink({ compact = false }: { compact?: boolean }) {
   const { t } = useTranslation();
 
@@ -108,6 +111,9 @@ function Header() {
           <a className="transition-colors hover:text-sage-dark" href="#enquiry">
             {t("nav.enquiry")}
           </a>
+          <a className="transition-colors hover:text-sage-dark" href="#contact">
+            {t("nav.contact")}
+          </a>
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -141,6 +147,9 @@ function Header() {
             </a>
             <a className="py-3" href="#enquiry" onClick={closeMenu}>
               {t("nav.enquiry")}
+            </a>
+            <a className="py-3" href="#contact" onClick={closeMenu}>
+              {t("nav.contact")}
             </a>
           </div>
           <div className="mt-5 flex flex-wrap items-center gap-3 border-t border-ink/10 pt-5">
@@ -178,9 +187,6 @@ function FeatureCopy({
 
 function App() {
   const { t } = useTranslation();
-  const enquiryHref = `mailto:${t("b2b.email")}?subject=${encodeURIComponent(
-    t("b2b.subject"),
-  )}&body=${encodeURIComponent(t("b2b.emailBody"))}`;
 
   return (
     <div id="top" className="overflow-clip">
@@ -390,7 +396,9 @@ function App() {
               </p>
             </div>
             <a
-              href={enquiryHref}
+              href={GOOGLE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-14 items-center justify-center gap-3 bg-ink px-7 text-base font-bold text-paper transition-colors hover:bg-sage-dark"
             >
               {t("b2b.action")}
@@ -416,6 +424,29 @@ function App() {
             </a>
           </div>
         </section>
+
+        <section
+          id="contact"
+          className="border-t border-ink/10 bg-bone py-20 sm:py-24"
+        >
+          <div className="page-shell grid items-end gap-12 lg:grid-cols-[1fr_auto]">
+            <div>
+              <h2 className="display-title max-w-4xl text-5xl sm:text-6xl lg:text-7xl">
+                {t("contact.title")}
+              </h2>
+              <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/70">
+                {t("contact.body")}
+              </p>
+            </div>
+            <a
+              href={`mailto:${t("contact.email")}`}
+              className="inline-flex min-h-14 items-center justify-center gap-3 bg-ink px-7 text-base font-bold text-paper transition-colors hover:bg-sage-dark"
+            >
+              {t("contact.action")}
+              <ArrowRight aria-hidden="true" size={19} />
+            </a>
+          </div>
+        </section>
       </main>
 
       <footer className="border-t border-ink/15 py-10">
@@ -431,7 +462,13 @@ function App() {
               <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
                 {t("footer.appStore")}
               </a>
-              <a href={enquiryHref}>{t("footer.enquiry")}</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={GOOGLE_FORM_URL}
+              >
+                {t("footer.enquiry")}
+              </a>
             </div>
             <p className="mt-4 text-xs text-ink/45">
               {t("footer.copyright", { year: new Date().getFullYear() })}
