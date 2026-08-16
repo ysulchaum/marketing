@@ -1,7 +1,7 @@
 const en = {
   translation: {
     meta: {
-      title: "Student StudyPen — AI Study App for iPad",
+      title: "Student StudyPen — AI Study App for DSE",
       description:
         "Student StudyPen is an AI study app for iPad. Write with Apple Pencil, get AI feedback, generate practice questions, and save problems for review.",
       socialDescription:

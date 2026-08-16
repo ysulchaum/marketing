@@ -1,7 +1,7 @@
 const zhTW = {
   translation: {
     meta: {
-      title: "Student StudyPen — iPad AI 學習與解題 App",
+      title: "Student StudyPen — DSE 學習與解題 App",
       description:
         "Student StudyPen 是 iPad AI 學習 App，支援 Apple Pencil 手寫解題、AI 答案分析、練習題生成與題目收藏。",
       socialDescription:
