@@ -1,0 +1,10 @@
+{
+  "name": "Student StudyPen",
+  "short_name": "StudyPen",
+  "description": "AI-powered study and practice app for iPad with Apple Pencil support.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#f6f4ef",
+  "categories": ["education", "productivity"]
+}
